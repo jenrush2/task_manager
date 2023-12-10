@@ -1,0 +1,26 @@
+<body style="background-color:CornflowerBlue;">
+<h1>A Poem of Tasks<h1>
+<br>
+
+<% @tasks.each do |task| %>
+    <% if task.id == 1 %>
+        <p> My heart needs to <%= task.title.downcase %>, </p> 
+        <p> but I tremble too much to <%= task.description.downcase %> </p>
+    <% elsif task.id == @mostrecenttask %>
+        <p> At the end of all, I may only <%= task.title.downcase %>. </p>
+    <% else %>
+        <p> Who knows why I might <%= task.description.downcase %>? </p>
+    <% end %>
+<% end %>
+
+</br>
+<p> The journey is never clear. </p></br>
+<p> The end of tasks is never near. </p>
+
+
+
+<br>
+<br>
+<a href="/tasks">Task Index</a>
+<br>
+<a href="/">Return Home</a>

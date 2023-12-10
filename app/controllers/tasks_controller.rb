@@ -34,4 +34,10 @@ class TasksController < ApplicationController
         Task.destroy(params[:id])
         redirect_to "/tasks"
     end
+
+    def easteregg
+        @tasks = Task.all
+        @mostrecenttask = @tasks.reduce([]){|id_array, task_object| id_array << task_object.id}.max
+    end
+
 end
