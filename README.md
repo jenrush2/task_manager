@@ -1,24 +1,9 @@
-# README
+## Task Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Uses the MVC design pattern to implement CRUD actions to create a Task Manager app. 
 
-Things you may want to cover:
+Completed based on the Task Manager Rails Tutorial (first introduction to a Rails app) from the Turing Backend program's open courseware. 
 
-* Ruby version
+https://github.com/turingschool-examples/task_manager_rails 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Use rails s to launch a local server. "/" route takes you to the main screen where you can access the Task Index and create a New Task. Other CRUD options are available from those two pages. 
